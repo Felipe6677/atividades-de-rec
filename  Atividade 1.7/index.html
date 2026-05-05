@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mansão Maromba</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+    <div class="container header-content">
+        <div class="logo">
+            <i class="fas fa-bolt"></i>
+            <h1>Mansão Maromba</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sabores">Sabores</a></li>
+                <li><a href="#tamanhos">Tamanhos</a></li>
+            </ul>
+        </nav>
+
+        <div class="cart-icon">
+            🛒 <span class="cart-count">0</span>
+        </div>
+    </div>
+</header>
+
+<section class="hero" id="home">
+    <div class="container hero-content">
+        <h2>Mansão Maromba</h2>
+        <a href="#sabores" class="btn">Ver</a>
+    </div>
+</section>
+
+<section id="sabores">
+    <div class="container">
+        <div class="sabores-grid" id="sabores-container"></div>
+    </div>
+</section>
+
+<section id="tamanhos">
+    <div class="container tamanhos-grid">
+
+        <div class="tamanho-card">
+            <h3>500ml</h3>
+            <button class="btn add-to-cart" data-size="500ml">Adicionar</button>
+        </div>
+
+        <div class="tamanho-card">
+            <h3>1L</h3>
+            <button class="btn add-to-cart" data-size="1L">Adicionar</button>
+        </div>
+
+        <div class="tamanho-card">
+            <h3>2L</h3>
+            <button class="btn add-to-cart" data-size="2L">Adicionar</button>
+        </div>
+
+    </div>
+</section>
+
+<div class="cart-modal" id="cartModal">
+    <div class="cart-modal-content">
+        <span class="close-modal">&times;</span>
+        <div id="cartItems"></div>
+        <h3 id="cartTotal">R$ 0,00</h3>
+        <button class="btn" id="checkoutBtn">Finalizar</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

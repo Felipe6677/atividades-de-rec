@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0D1117;
+  color: #C9D1D9;
+  text-align: center;
+  margin-top: 40px;
+  transition: 0.4s;
+}
+
+h1 {
+  color: #E34F26;
+}
+
+input {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 6px;
+  border: 2px solid #264DE4;
+  outline: none;
+  font-size: 14px;
+  background-color: #161B22;
+  color: #C9D1D9;
+}
+
+input:focus {
+  border-color: #1F6FEB;
+  box-shadow: 0 0 5px #1F6FEB;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 6px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  color: white;
+}
+
+#btnSaudar {
+  background-color: #2EA043;
+}
+
+#btnIdade {
+  background-color: #264DE4;
+}
+
+#btnTema {
+  background-color: #1F6FEB;
+}
+
+#btnLimpar {
+  background-color: #E34F26;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+#resultado {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #3776AB;
+}
+
+.dark-mode {
+  background-color: #F5F5F5;
+  color: #1e1e1e;
+}
+
+.dark-mode input {
+  background-color: white;
+  color: black;
+  border: 2px solid #1F6FEB;
+}
+
+.dark-mode #resultado {
+  color: #E34F26;
+}
